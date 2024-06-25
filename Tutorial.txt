@@ -1,0 +1,29 @@
+primeiro passo:
+
+criar uma pasta chamada server
+
+segundo passo:
+
+realizar download das seguintes bibliotecas:
+npm init
+npm i express nodemon
+
+terceiro passo: 
+
+fazer essas mudanças no arquivo package.json:
+
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+quarto passo: 
+
+inicializar o express em um novo arquivo chamado server.js
+
+const express = require('express')
+
+const app = express()
+const PORT = process.env.PORT || 3001
